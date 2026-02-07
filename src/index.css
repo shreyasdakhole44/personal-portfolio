@@ -24,3 +24,21 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a855f7; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9333ea; 
+}

@@ -39,7 +39,7 @@ const Work = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-xl"
+                className="w-full h-48 object-contain bg-gray-950 rounded-xl"
               />
             </div>
             <div className="p-6">
@@ -66,9 +66,9 @@ const Work = () => {
 
       {/* Modal Container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
-            <div className="flex justify-end p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4">
+          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl max-h-[85vh] overflow-y-auto relative">
+            <div className="flex justify-end p-4 sticky top-0 bg-gray-900 z-10">
               <button
                 onClick={handleCloseModal}
                 className="text-white text-3xl font-bold hover:text-purple-500"
@@ -82,7 +82,7 @@ const Work = () => {
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  className="lg:w-full w-[95%] max-h-[50vh] object-contain rounded-xl shadow-2xl"
                 />
               </div>
               <div className="lg:p-8 p-6">

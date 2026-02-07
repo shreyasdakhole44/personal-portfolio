@@ -24,32 +24,32 @@ const About = () => {
           </h2>
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-  <span className="text-white">I am a </span>
-  <Typewriter
-    words={[
-      'Fullstack Developer',
-      'Problem Solver',
-      
-    ]}
-    loop={0}
-    cursor
-    cursorStyle="|"
-    typeSpeed={100}
-    deleteSpeed={50}
-    delaySpeed={2000}
-  />
-</h3>
+            <span className="text-white">I am a </span>
+            <Typewriter
+              words={[
+                'Fullstack Developer',
+                'Problem Solver',
+
+              ]}
+              loop={0}
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={2000}
+            />
+          </h3>
 
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-           Full-Stack Developer specialized in the <strong>MERN stack</strong>. 
-            With a deep focus on algorithmic efficiency, I have solved 
-            <strong> 1,000+ DSA problems</strong> across LeetCode, GFG, and HackerRank, 
+            Full-Stack Developer specialized in the <strong>MERN stack</strong>.
+            With a deep focus on algorithmic efficiency, I have solved
+            <strong> 1,000+ DSA problems</strong> across LeetCode, GFG, and HackerRank,
             combining robust logic with scalable web architecture.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1gP9lSxDom2mmj6ncqNEJAACI2ABIHlXN/view?usp=drive_link"
+            href="https://drive.google.com/uc?export=download&id=1gP9lSxDom2mmj6ncqNEJAACI2ABIHlXN"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -60,7 +60,7 @@ const About = () => {
           >
             DOWNLOAD CV
           </a>
-          
+
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
